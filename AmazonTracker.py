@@ -2,14 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import smtplib
 
-YOUR_EMAIL = "vc.nitin.01@gmail.com"
-YOUR_PASSWORD = "zqcf ytwb yfsj beip"
-
-PRODUCT_URL = "https://www.amazon.in/Philips-HP8302-Essential-Selfie-Straightener/dp/B00TGXJBNE/ref=sr_1_7?crid=26H3JZ4JIDQZ1&dib=eyJ2IjoiMSJ9.uwO1UV15OsLQnet6lARBsMjE6U4MWKEavsa14RQgtO6WuWboQqqXF_o_rbX5C7EkEN6yC0pUbLw2BJeLOCAdXPDHeYWNVR6ObUn-7b32rCZBB3kvxd89hNML_B-2xhB9kVisVszk2Nyuwc0aNEvZ1qwNdTPacV1agFzCXV2q53UtmtU44cRmy3kdhlwvhqkzRkb84pw1_p2JqTXtadIyMJF3IKUk6PHPxewtEHztBAqtAftVX3PSuOGuydTNSObBf5xa1kgyPRZR81W3lEL7F6wUNMQeLlxrfJouYmFE9Z4.oHziI58vt3kP5JbU-KTf3ltQEa0AIvs8I_TkGaNqqUg&dib_tag=se&keywords=phillips+hair+straightening+brush+with+keratin+infused+bristle&nsdOptOutParam=true&qid=1720449745&sprefix=phillips+%2Caps%2C215&sr=8-7"
+YOUR_EMAIL = "your_email@gmail.com"
+YOUR_PASSWORD = "your_email_password"
+PRODUCT_URL = "https://www.amazon.in/your-product-url"
 
 headers = {
-    "Accept-Language": "en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+    "You'll need to pass along some headers in order for the request to return the actual website HTML. At minimum you'll need to give your "User-Agent" and "Accept-Language" values in the request header."
+    "You can see your browser headers by going to this website: 'http://myhttpheader.com/' "
+    
 }
 
 response = requests.get(PRODUCT_URL, headers=headers)
