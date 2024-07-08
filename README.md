@@ -45,5 +45,5 @@ PRODUCT_URL = "https://www.amazon.in/your-product-url"
 2. ▶️ Run the script:
 
 ```bash
-python main.py
+AmazonTracker.py
 ```
